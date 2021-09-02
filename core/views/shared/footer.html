@@ -1,0 +1,13 @@
+
+<!-- This is a separated file to code your footer -->
+  <footer class="footer">
+    <h4 class="footer__content">Homepage | Portfolio | Contact Me</h4>
+    <h4 class="footer__content">&copy; All Rights Reserved</h4>
+</footer>
+@@if(context.script) {
+  @@for(var i=0; i < script.length; i++) {
+  <script src="`+script[i]+`" ></script>
+  }
+}
+  </body>
+</html>

@@ -1,0 +1,49 @@
+@@include('../shared/header.html', {
+    "style": [
+        "assets/css/main.css"
+    ]
+})
+<section class="container">
+    <h1 class="container__contact">Contact Me</h1>
+    <div class="container__model">
+        <form name="aneka_busa">
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <th><label for="nama">Nama Lengkap</label></th>
+                        <th>:</th>
+                        <td><input type="text" placeholder="Masukan Nama Anda" id="nama" name="nama" required oninvalid="this.setCustomValidity('Wajib di isi')"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">Email</label></th>
+                        <th>:</th>
+                        <td><input type="email" id="email" name="email" placeholder="Masukan Email Anda" required oninvalid="alert('Wajib di isi')"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="company">Company</label></th>
+                        <th>:</th>
+                        <td><input type="text" id="company" name="company" placeholder="Company"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="phone">Phone nuber</label></th>
+                        <th>:</th>
+                        <td><input type="tel" id="phone" name="phone" placeholder="Masukan No.Tlpn Anda"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="pesan">Pesan</label></th>
+                        <th>:</th>
+                        <td><textarea id="pesan" cols="30" rows="10" placeholder="Masukan Pesan Yang ingin di tulis" name="pesan"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center"><button type="submit" class="container__btn btn-kirim">submit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</section>
+@@include('../shared/footer.html', {
+    "script": [
+        "assets/js/app.min.js"
+    ]
+})

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+@@if(context.style) {
+  @@for(var i=0; i < style.length; i++) {
+  <link rel="stylesheet" href="`+style[i]+`">
+  }
+}
+
+  <title>Myportfolio</title>
+</head>
+<body>
+
+  <!-- This is a separated file to code the beginning of your HTML layout -->
+
+  <nav class="navbar">
+    <img src="assets/image/profile1.png" alt="Nur Muhamad Soleh">
+    <h4 class="navbar__brand"> My Portfolio nur muhamad soleh</h4>
+    <ul class="navbar__menu">
+        <li><a href="./index.html">Homepage <span> |</span></a></li>
+        <li><a href="./portfolio.html">Portfolio  <span> |</span></a></li>
+        <li><a href="./contact.html">Contact Me </a></li>
+    </ul>
+  </nav>
+  
+
